@@ -34,7 +34,6 @@ def main():
 	model.to_gpu(0)
 	optimizer = optimizers.SGD(lr=0.001).setup(model)
 
-	
 	N = len(train_input)
 	perm = np.random.permutation(N)
 	for epoch in range(max_epoch):
